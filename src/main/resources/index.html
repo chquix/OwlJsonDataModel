@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sample for OWL JSON Data Model">
+    <meta name="author" content="Christoph Quix">
+
+    <title>Sample for OWL JSON Data Model</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Sample for OWL JSON Data Model</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <!-- Main component -->
+    <div id="overview" class="jumbotron col-md-10 col-md-offset-2">
+        <h2>Overview OWL Ontology</h2>
+        <p>You will see here the details, if you click on an element on the left side.
+        </p>
+    </div>
+    <div id="detailsview" class="col-md-10 col-md-offset-2 main" style="display: none;">
+        <div id="detailsview1" class="col-xs-12 row"></div>
+<!--    ENABLE THIS FOR COMMENTING FEATURE WITH COMMENTICS -->
+      <!--
+        <div id="comments" class="col-xs-12 row">
+          <iframe id="comframe" src="" class="col-xs-12 row" height="600"
+                  seamless style="border: 0px none transparent; padding: 0px; overflow: hidden;">
+            IFrame für Kommentare kann nicht angezeigt werden.
+          </iframe>
+        </div>-->
+    </div>
+    <!-- Classes -->
+    <div id="concepts" class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 sidebar">
+                <h3>Liste der Objekte</h3>
+                <div id="classtree"></div>
+            </div>
+        </div>
+    </div>
+</div> <!-- /container -->
+
+
+
+</body>
+
+<!-- finally, more scripts -->
+<!-- <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-treeview.min.js"></script>
+
+<!-- KDSF specific includes -->
+<script src="js/Ontology.js" type="text/javascript"></script>
+<!-- ADJUST ONTOLOGY FILE NAME HERE -->
+<script src="js/someontology.owl.js" type="text/javascript" charset="ISO-8859-1"></script>
+<script type="text/javascript">
+/* Some configurations */
+
+/* Defines a list of classes which should be shown as on the top level of the tree. Use the URIs
+ of the ontology elements. */
+/* var topClasses=[]; */
+
+/* This will also show object properties in the tree */
+var showObjProps=true;
+
+</script>
+<script src="js/OwlDoc.js" type="text/javascript"></script>
+
+</html>
